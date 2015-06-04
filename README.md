@@ -14,5 +14,17 @@ use the [standalone version of Sherpa](http://cxc.cfa.harvard.edu/contrib/sherpa
    of Sherpa (I added this as we are currently lacking in documentation
    for how to use the `add_user_model` routine).
 
+   May 26 2015.
+
+ - [An integrated user model](http://nbviewer.ipython.org/github/DougBurke/sherpa-standalone-notebooks/blob/master/an%20integrated%20user%20model.ipynb),
+   which fits the Gamma probability distribution function to the data
+   set used in the 'Writing your own user model' example. This is
+   an example of handling "integrated" data sets, and also shows off
+   how to write a `guess` routine for your model, and some plot
+   manipulations (in particular, re-creating a region-projection plot
+   and adding extra annotations to it).
+
+   June 4 2015.
+   
 The information in these notebooks is placed in the Public Domain and
 is not an official product of the Chandra X-ray Center.
