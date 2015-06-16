@@ -34,6 +34,16 @@ use the [standalone version of Sherpa](http://cxc.cfa.harvard.edu/contrib/sherpa
    can *you*.
 
    June 5 2015.
+
+ - [Extending existing models (and an example of using XSPEC models)](http://nbviewer.ipython.org/github/DougBurke/sherpa-standalone-notebooks/blob/master/extending%20existing%20models%20%28and%20XSPEC%29.ipynb),
+   which shows how to write a user model that extends the behavior of
+   an existing model (in this case, subtracting a model from itself with
+   different parameter values). It also shows how to build the XSPEC module,
+   and so use the
+   [XSPEC models](https://heasarc.gsfc.nasa.gov/xanadu/xspec/manual/Models.html)
+   from standalone Sherpa.
+
+   June 16 2015.
    
 The information in these notebooks is placed in the Public Domain and
 is not an official product of the Chandra X-ray Center.
