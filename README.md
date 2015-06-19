@@ -44,6 +44,16 @@ use the [standalone version of Sherpa](http://cxc.cfa.harvard.edu/contrib/sherpa
    from standalone Sherpa.
 
    June 16 2015.
-   
+
+ - [Simulating 2D data with a dash of error analysis](http://nbviewer.ipython.org/github/DougBurke/sherpa-standalone-notebooks/blob/master/simulating%20a%202D%20image%20and%20a%20bit%20of%20error%20analysis.ipynb),
+   which uses the object API to simulate a 2D model (i.e. an image),
+   fit it, and calculate errors on the parameters. This can be thought of
+   as an extension of the previous notebooks that show how to replicate
+   the functionality of the high-level UI layer using the object API
+   (it also marks the start of me using the term "object API" for what I
+   previously referred to as the "low-level API").
+
+   June 19 2015
+
 The information in these notebooks is placed in the Public Domain and
 is not an official product of the Chandra X-ray Center.
