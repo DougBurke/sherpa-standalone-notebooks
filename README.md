@@ -55,5 +55,16 @@ use the [standalone version of Sherpa](http://cxc.cfa.harvard.edu/contrib/sherpa
 
    June 19 2015
 
+ - [Simulating and fitting a 2D image (this time with a Bayesian approach)](http://nbviewer.ipython.org/github/DougBurke/sherpa-standalone-notebooks/blob/master/simulating%20and%20fitting%20a2D%20image%20%28this%20time%20with%20a%20Bayesian%20approach%29.ipynb),
+   which is based on the previous notebook, this time showing how
+   you can use the Monte Carlo Markov Chain (MCMC) analysis module
+   in Sherpa (that is, the
+   [Bayesian Low-Count X-ray Spectral (pyBLoCXS)](http://hea-www.harvard.edu/astrostat/pyblocxs/)
+   module). This notebook is mainly intended to show *how* to do this,
+   rather than explain why (or the differences between the various
+   frequentist and Bayesian methods for coming up with an error estimate).
+
+   June 22 2015
+
 The information in these notebooks is placed in the Public Domain and
 is not an official product of the Chandra X-ray Center.
