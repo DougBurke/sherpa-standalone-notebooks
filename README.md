@@ -1,7 +1,14 @@
 
 IPyton notebooks showing off how to
-use the [standalone version of Sherpa](http://cxc.cfa.harvard.edu/contrib/sherpa47b/) to fit data.
+use the [standalone version of Sherpa](http://cxc.cfa.harvard.edu/contrib/sherpa47b/)
+to fit data.
 
+ - [A really simple "fit"](http://nbviewer.ipython.org/github/DougBurke/sherpa-standalone-notebooks/blob/master/really%20simple%20fit.ipynb),
+   which also doubles as my go-to-guide when cooking my kids porridge
+   for breakfast.
+
+   January 18 2016   
+ 
  - [A simple fit](http://nbviewer.ipython.org/github/DougBurke/sherpa-standalone-notebooks/blob/master/simple%20sherpa%20fit.ipynb) which is based on
    the [NumPy/SciPy fitting example](http://python4astronomers.github.io/core/numpy_scipy.html)
    from the 
