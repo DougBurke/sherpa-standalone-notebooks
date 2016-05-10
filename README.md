@@ -3,6 +3,16 @@ IPyton notebooks showing off how to
 use the [standalone version of Sherpa](http://cxc.cfa.harvard.edu/contrib/sherpa47b/)
 to fit data.
 
+You can now try them out *directly in your browser*
+via the magic of the MyBinder project (unfortunately the offer does
+not extend to the XSPEC example as there's no easy build of the XSPEC
+user models that the binder project can use,
+I appear to have forgotten to set up the SciPy requirement so this
+will cause some problems in some notebooks,
+and it is not likely to
+be as fast as when run on your own machine):
+[![Binder](http://mybinder.org/badge.svg)](http://mybinder.org/repo/DougBurke/sherpa-standalone-notebooks)
+
  - [A really simple "fit"](http://nbviewer.ipython.org/github/DougBurke/sherpa-standalone-notebooks/blob/master/really%20simple%20fit.ipynb),
    which also doubles as my go-to-guide when cooking my kids porridge
    for breakfast.
