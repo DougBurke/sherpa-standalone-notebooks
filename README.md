@@ -17,8 +17,6 @@ be as fast as when run on your own machine):
    which also doubles as my go-to-guide when cooking my kids porridge
    for breakfast.
 
-   Originally written: January 18 2016
-   
    Last updated: September 26 2016 to use the Sherpa 4.8.2 release
  
  - [A simple fit](http://nbviewer.ipython.org/github/DougBurke/sherpa-standalone-notebooks/blob/master/simple%20sherpa%20fit.ipynb) which is based on
@@ -35,7 +33,7 @@ be as fast as when run on your own machine):
    of Sherpa (I added this as we are currently lacking in documentation
    for how to use the `add_user_model` routine).
 
-   May 26 2015.
+   Last updated: September 26 2016 to use the Sherpa 4.8.2 release
 
  - [An integrated user model](http://nbviewer.ipython.org/github/DougBurke/sherpa-standalone-notebooks/blob/master/an%20integrated%20user%20model.ipynb),
    which fits the Gamma probability distribution function to the data
