@@ -43,7 +43,7 @@ be as fast as when run on your own machine):
    manipulations (in particular, re-creating a region-projection plot
    and adding extra annotations to it).
 
-   June 4 2015.
+   Last updated: September 26 2016 to use the Sherpa 4.8.2 release
 
  - [How can I plot data and models when using the lower-level routines](http://nbviewer.ipython.org/github/DougBurke/sherpa-standalone-notebooks/blob/master/plotting%20using%20the%20lower-level%20routines.ipynb),
    which came up (in my mind) in the "Writing your own user model"
