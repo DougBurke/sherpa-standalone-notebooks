@@ -1,6 +1,6 @@
 
 IPyton notebooks showing off how to
-use the [standalone version of Sherpa](http://cxc.cfa.harvard.edu/contrib/sherpa47b/)
+use the [standalone version of Sherpa](http://cxc.cfa.harvard.edu/contrib/sherpa/)
 to fit data.
 
 You can now try them out *directly in your browser*
@@ -25,6 +25,8 @@ be as fast as when run on your own machine):
    [Practical Python for Astronomers](http://python4astronomers.github.io/index.html)
    course.
 
+   Last updated: September 26 2016 to use the Sherpa 4.8.2 release
+   
  - [Writing your own user model](http://nbviewer.ipython.org/github/DougBurke/sherpa-standalone-notebooks/blob/master/user%20model.ipynb),
    which fits the cumulative distribution function of a data set
    with the Gamma CDF. The same code can be run from the CIAO version
