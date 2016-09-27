@@ -52,7 +52,7 @@ be as fast as when run on your own machine):
    I did not know how to create the plots. Well, I do know, and so
    can *you*.
 
-   June 5 2015.
+   Last updated: September 27 2016 to use the Sherpa 4.8.2 release
 
  - [Extending existing models (and an example of using XSPEC models)](http://nbviewer.ipython.org/github/DougBurke/sherpa-standalone-notebooks/blob/master/extending%20existing%20models%20%28and%20XSPEC%29.ipynb),
    which shows how to write a user model that extends the behavior of
