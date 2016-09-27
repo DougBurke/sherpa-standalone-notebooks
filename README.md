@@ -72,7 +72,7 @@ be as fast as when run on your own machine):
    (it also marks the start of me using the term "object API" for what I
    previously referred to as the "low-level API").
 
-   June 19 2015
+   Last updated: September 27 2016 to use the Sherpa 4.8.2 release
 
  - [Simulating and fitting a 2D image (this time with a Bayesian approach)](http://nbviewer.ipython.org/github/DougBurke/sherpa-standalone-notebooks/blob/master/simulating%20and%20fitting%20a%202D%20image%20%28this%20time%20with%20a%20Bayesian%20approach%29.ipynb),
    which is based on the previous notebook, this time showing how
