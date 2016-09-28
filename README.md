@@ -83,7 +83,7 @@ be as fast as when run on your own machine):
    rather than explain why (or the differences between the various
    frequentist and Bayesian methods for coming up with an error estimate).
 
-   June 22 2015
+   Last updated: September 28 2016 to use the Sherpa 4.8.2 release
 
 The information in these notebooks is placed in the Public Domain and
 is not an official product of the Chandra X-ray Center.
