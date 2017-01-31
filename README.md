@@ -1,7 +1,12 @@
 
 IPyton notebooks showing off how to
-use the [standalone version of Sherpa](http://cxc.cfa.harvard.edu/contrib/sherpa/)
+use the
+[standalone version of Sherpa](http://cxc.cfa.harvard.edu/contrib/sherpa/)
 to fit data.
+
+**The mybinder version appears to be broken, and I haven't looked into
+what is going on, so there's a distinct possibility that the 'launch binder'
+button isn't going to work.**
 
 You can now try them out *directly in your browser*
 via the magic of the MyBinder project (unfortunately the offer does
@@ -85,5 +90,14 @@ be as fast as when run on your own machine):
 
    Last updated: September 28 2016 to use the Sherpa 4.8.2 release
 
+ - [An introduction to the Session object](http://nbviewer.ipython.org/github/DougBurke/sherpa-standalone-notebooks/blob/master/an%20introduction%20to%20the%20Session%20object.ipynb),
+   which is a *very* brief example of how to use the Session object
+   to access the UI API (e.g. that from sherpa.astro.ui or sherpa.ui)
+   but with a more-Pythonic approach.
+
+   Last updated: January 31 2017 to use the Sherpa 4.9.0 release
+   (which should be available within a few days of this notebook
+   being published).
+ 
 The information in these notebooks is placed in the Public Domain and
 is not an official product of the Chandra X-ray Center.
