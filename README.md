@@ -1,6 +1,5 @@
 
-IPyton notebooks showing off how to
-use the
+IPython notebooks showing off how to use the
 [standalone version of Sherpa](http://cxc.cfa.harvard.edu/contrib/sherpa/)
 to fit data.
 
