@@ -99,5 +99,13 @@ be as fast as when run on your own machine):
    (which should be available within a few days of this notebook
    being published).
  
+ - [Fitting a PHA dataset using the object API](http://nbviewer.ipython.org/github/DougBurke/sherpa-standalone-notebooks/blob/master/Fitting%20a%20PHA%20dataset%20using%20the%20object%20API.ipynb),
+   which provides a quick runthrough showing how to use the object
+   API to fit a PHA data set (that is, how in include the instrument
+   response in a fit).
+
+   Last updated: August 8 2017 using the recently-released Sherpa
+   4.9.1 release (and it is also the first Python 3.6 notebook).
+ 
 The information in these notebooks is placed in the Public Domain and
 is not an official product of the Chandra X-ray Center.
