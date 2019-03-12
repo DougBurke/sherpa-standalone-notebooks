@@ -1,7 +1,27 @@
 
-IPython notebooks showing off how to use the
-[standalone version of Sherpa](http://cxc.cfa.harvard.edu/contrib/sherpa/)
-to fit data.
+IPython notebooks showing off how to use either the
+[standalone version](https://sherpa.readthedocs.io/en/latest/)
+or [CIAO](http://cxc.harvard.edu/sherpa/)
+version of Sherpa to fit data.
+
+# New with CIAO 4.11
+
+CIAO 4.11 comes with both `jupyter notebook` support and includes Matplotlib,
+so you can just enter
+
+    > jupyter notebook
+
+in this directory after starting CIAO (i.e. sourceing the `ciao.*sh` file
+to match your shell).  If you are going this route, then it is *strongly*
+suggested that you change your `.sherpa.rc` file in your home directory so
+that Sherpa uses Matplotlib rather than ChIPS for its plots (as Matplotlib
+is integrated with Jupyter notebooks whereas ChIPS is not). That is, you
+should see
+
+    > grep plot_pkg ~/.sherpa.rc
+    plot_pkg : pylab
+
+# MyBinder
 
 **The mybinder version appears to be broken, and I haven't looked into
 what is going on, so there's a distinct possibility that the 'launch binder'
@@ -105,6 +125,12 @@ be as fast as when run on your own machine):
 
    Last updated: August 8 2017 using the recently-released Sherpa
    4.9.1 release (and it is also the first Python 3.6 notebook).
+
+ - [Grouping spectra](https://nbviewer.jupyter.org/github/DougBurke/sherpa-standalone-notebooks/blob/master/grouping-spectra.ipynb), which looks
+   at grouping PHA data to match plots produced by Sherpa. This isn't
+   quite finished, but may be helpful to the [REXIS team](https://hea-www.harvard.edu/REXIS/class.html).
+
+   Last updated: March 12 2019 using CIAO 4.11
  
 The information in these notebooks is placed in the Public Domain and
 is not an official product of the Chandra X-ray Center.
