@@ -130,7 +130,10 @@ be as fast as when run on your own machine):
    at grouping PHA data to match plots produced by Sherpa. This isn't
    quite finished, but may be helpful to the [REXIS team](https://hea-www.harvard.edu/REXIS/class.html).
 
-   Last updated: March 12 2019 using CIAO 4.11
+   This notebook uses [CIAO 4.11](http://cxc.harvard.edu/ciao4.11/).
+   
+   Last updated: March 14 2019 to add a section on errors and
+   how to calculate them and match the plot results
  
 The information in these notebooks is placed in the Public Domain and
 is not an official product of the Chandra X-ray Center.
