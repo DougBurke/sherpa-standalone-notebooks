@@ -1,0 +1,59 @@
+#!/bin/bash
+#
+# Use the Binder postBuild script to install CIAO and some extra
+# Python packages into the CIAO installation. This is possible
+# with CIAO 4.11 and later.
+#
+# The start script starts up CIAO, so that this is used to run the
+# notebook server.
+#
+# For now do a full CIAO installation (minus the CALDB) from the
+# official CIAO site. This may mess up our download statistics so
+# I may change the location to get the files from some other
+# location.
+#
+# This defaults to the latest CIAO (and assumes the means to download
+# the CIAO installation script hasn't changed significantly from CIAO 4.11).
+#
+downloaddir=${HOME}/download
+installdir=${HOME}/local
+if [ ! -d $downloaddir ] ; then mkdir $downloaddir ; fi
+if [ ! -d $installdir ] ; then mkdir $installdir ; fi
+
+ciaover=411
+ciaover_major=4
+ciaover_minor=11
+url="http://cxc.harvard.edu/cgi-gen/ciao/ciao${ciaover_major}${ciaover_minor}_install.cgi?tools=true&sherpa=true&contrib=true"
+
+echo "** downloading ciao-install"
+curl --silent "$url" > ${downloaddir}/ciao-install
+
+# Tests aren't run in batch mode
+#
+echo "** running ciao-install"
+bash ${downloaddir}/ciao-install --download $downloaddir --logdir $downloaddir --prefix $installdir --batch
+
+# Check
+#
+echo "** Start CIAO"
+bash ${installdir}/ciao-${ciaover_major}.${ciaover_minor}/bin/ciao.bash
+ciaover -v
+
+# Extra packages; for CIAO 4.11 we do not want to update NumPy from the
+# CIAO-installed version (1.12.1) which is incompatible with Astropy 3.1
+# and later.
+#
+# Not sure Astropy is needed with the current notebooks, but done to
+# show it is possible.
+#
+pip3 freeze > ${installdir}/constraints.txt
+pip3 install -c ${installdir}/constraints.txt 'astropy<3.1' 
+
+# Ensure that CIAO is available from bash. This could be done in
+# the start script, but try this approach for now.
+#
+echo ". ${HOME}/local/ciao-${ciaover_major}.${ciaover_minor}/bin/ciao.bash" >> ~/.bashrc
+
+# Ensure that matplotlib is the default plotting package for Sherpa.
+#
+sed -e 's/chips/pylab/g' ${ASCDS_INSTALL}/config/sherpa/.sherpa.rc > ${HOME}/.serpa.rc
