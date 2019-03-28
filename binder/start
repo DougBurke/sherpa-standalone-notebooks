@@ -1,8 +1,20 @@
 #!/bin/bash
 
-# Ensure that CIAO is available from bash. This could be done in
-# the start script, but try this approach for now.
+# Store the input arguments as starting CIAO below wipes them out
 #
+args=("$@")
+
+# Ensure that CIAO is available in the user environment (that is,
+# we use the CIAO-provided Jupyter notebook, which is (CIAO 4.11):
+#
+#    pip list --format=columns | grep jupyter
+#    jupyter                  1.0.0
+#    jupyter-client           5.2.3
+#    jupyter-console          5.2.0
+#    jupyter-core             4.4.0
+#
+#
+
 . ${HOME}/local/ciao-4.11/bin/ciao.bash
 
-exec "$@"
+exec "${args[@]}"
