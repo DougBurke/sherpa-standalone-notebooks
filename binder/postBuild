@@ -80,7 +80,7 @@ for tgz in ${downloaddir}/*tar.gz ; do
   tar xzf $tgz
 done
 
-cd ciao-${ciaover_major}.{$ciaover_minor}
+cd ciao-${ciaover_major}.${ciaover_minor}
 ./configure
 bash bin/ciao-python-fix
 
