@@ -84,7 +84,7 @@ cd ciao-${ciaover_major}.${ciaover_minor}
 ./configure
 bash bin/ciao-python-fix
 
-bash ${installdir}/ciao-${ciaover_major}.${ciaover_minor}/bin/ciao.bash
+. ${installdir}/ciao-${ciaover_major}.${ciaover_minor}/bin/ciao.bash
 ahelp -r > /dev/null
 
 # Check
@@ -110,4 +110,4 @@ echo ". ${HOME}/local/ciao-${ciaover_major}.${ciaover_minor}/bin/ciao.bash" >> ~
 
 # Ensure that matplotlib is the default plotting package for Sherpa.
 #
-sed -e 's/chips/pylab/g' ${ASCDS_INSTALL}/config/sherpa/.sherpa.rc > ${HOME}/.serpa.rc
+sed -e 's/chips/pylab/g' ${ASCDS_INSTALL}/config/sherpa/.sherpa.rc > ${HOME}/.sherpa.rc
