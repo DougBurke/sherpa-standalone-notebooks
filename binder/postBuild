@@ -15,6 +15,9 @@
 # This defaults to the latest CIAO (and assumes the means to download
 # the CIAO installation script hasn't changed significantly from CIAO 4.11).
 #
+
+set -e
+
 downloaddir=${HOME}/download
 installdir=${HOME}/local
 if [ ! -d $downloaddir ] ; then mkdir $downloaddir ; fi
@@ -23,20 +26,66 @@ if [ ! -d $installdir ] ; then mkdir $installdir ; fi
 ciaover=411
 ciaover_major=4
 ciaover_minor=11
-url="http://cxc.harvard.edu/cgi-gen/ciao/ciao${ciaover_major}${ciaover_minor}_install.cgi?tools=true&sherpa=true&contrib=true"
 
-echo "** downloading ciao-install"
-curl --silent "$url" > ${downloaddir}/ciao-install
+# I had hoped to download with ciao-install but have hit some problems
+# with ftp access and it's hard to diagnose, so just use the versions
+# available on Google Drive.
+#
+# url="http://cxc.harvard.edu/cgi-gen/ciao/ciao${ciaover_major}${ciaover_minor}_install.cgi?tools=true&sherpa=true&contrib=true"
+
+# echo "** downloading ciao-install"
+# curl --silent "$url" > ${downloaddir}/ciao-install
 
 # Tests aren't run in batch mode
 #
-echo "** running ciao-install"
-bash ${downloaddir}/ciao-install --download $downloaddir --logdir $downloaddir --prefix $installdir --batch
+# echo "** running ciao-install"
+# bash ${downloaddir}/ciao-install --download $downloaddir --logdir $downloaddir#  --prefix $installdir --batch
+
+# Thanks to https://stackoverflow.com/a/48133859 as these are large files
+#
+dload()
+{
+    fileid="$1"
+    filename=$2
+    curl -c ./cookie -s -L "https://drive.google.com/uc?export=download&id=${fileid}" > /dev/null
+    curl -Lb ./cookie -s "https://drive.google.com/uc?export=download&confirm=`awk '/download/ {print $NF}' ./cookie`&id=${fileid}" -o ${filename}
+}
+
+
+# Note: these files may disappear at any time; this should not be considered
+# a reliable avenue for installing CIAO!
+#
+# Note that I am *not* installing ChIPS here since the idea is to use
+# Matplotlib with Sherpa, and that this is not meant to be a full
+# CIAO installation
+#
+echo "*** downloading segments"
+dload '1RDIv68waxCnGrraO_D_MMq_LqJaMcW5B' ${downloaddir}/ciao-4.11-bin-core-LinuxU.tar.gz
+dload '17IpZEAJ7Qjj8TAB-8h6dP_OLr1tW6ZFa' ${downloaddir}/ciao-4.11-bin-tools-LinuxU.tar.gz
+# dload '1iv1FogAlQwgB3ZvhWCJnkmEr3JHtminM' ${downloaddir}/ciao-4.11-bin-graphics-LinuxU.tar.gz
+# dload '1eD1DLwNI1FODc8BEt6iA3kLqUeShN5WT' ${downloaddir}/ciao-4.11-bin-chips-LinuxU.tar.gz
+dload '1bQbAOkjje_egDakYhcUDxwkRk0AzVxXY' ${downloaddir}/ciao-4.11-bin-sherpa-LinuxU.tar.gz
+
+# This is a small file but use dload for completeness
+dload '12NRrVyjhX1qZA4hj0Gbm9_-_1SvHNfyB' ${downloaddir}/ciao-4.11-contrib-1.tar.gz
+
+echo "** Manual installation"
+cd $installdir
+for tgz in ${downloaddir}/*tar.gz ; do
+  tar xzf $tgz
+done
+
+cd ciao-${ciaover_major}.{$ciaover_minor}
+./configure
+bash bin/ciao-python-fix
+
+bash ${installdir}/ciao-${ciaover_major}.${ciaover_minor}/bin/ciao.bash
+ahelp -r > /dev/null
 
 # Check
 #
 echo "** Start CIAO"
-bash ${installdir}/ciao-${ciaover_major}.${ciaover_minor}/bin/ciao.bash
+# bash ${installdir}/ciao-${ciaover_major}.${ciaover_minor}/bin/ciao.bash
 ciaover -v
 
 # Extra packages; for CIAO 4.11 we do not want to update NumPy from the
