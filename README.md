@@ -23,19 +23,16 @@ should see
 
 # MyBinder
 
-**The mybinder version appears to be broken, and I haven't looked into
-what is going on, so there's a distinct possibility that the 'launch binder'
-button isn't going to work.**
+I have used the [MyBinder service](https://mybinder.org/) to create an
+environment that contains CIAO 4.11 (well, the Sherpa parts, so you
+get XSPEC and matplotlib) which can be used to *run these notebooks
+straight from your browser*. Awesome!
 
-You can now try them out *directly in your browser*
-via the magic of the MyBinder project (unfortunately the offer does
-not extend to the XSPEC example as there's no easy build of the XSPEC
-user models that the binder project can use,
-I appear to have forgotten to set up the SciPy requirement so this
-will cause some problems in some notebooks,
-and it is not likely to
-be as fast as when run on your own machine):
-[![Binder](http://mybinder.org/badge.svg)](http://mybinder.org/repo/DougBurke/sherpa-standalone-notebooks)
+Note that most of the binders have not been re-run with CIAO 4.11, and
+so may fail due to using Python 2.7 idioms (or changes in behavior, but
+I don't expect there to be any of the latter).
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/DougBurke/sherpa-standalone-notebooks/master)
 
  - [A really simple "fit"](http://nbviewer.ipython.org/github/DougBurke/sherpa-standalone-notebooks/blob/master/really%20simple%20fit.ipynb),
    which also doubles as my go-to-guide when cooking my kids porridge
