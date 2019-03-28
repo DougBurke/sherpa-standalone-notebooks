@@ -43,12 +43,17 @@ ciaover_minor=11
 
 # Thanks to https://stackoverflow.com/a/48133859 as these are large files
 #
+# Report the download time so that we have some idea of how long these
+# calls can take.
+#
 dload()
 {
     fileid="$1"
     filename=$2
+    echo "-- downloading $filename (`date`)"
     curl -c ./cookie -s -L "https://drive.google.com/uc?export=download&id=${fileid}" > /dev/null
-    curl -Lb ./cookie -s "https://drive.google.com/uc?export=download&confirm=`awk '/download/ {print $NF}' ./cookie`&id=${fileid}" -o ${filename}
+    # remove -s from the following curl call
+    time curl -Lb ./cookie "https://drive.google.com/uc?export=download&confirm=`awk '/download/ {print $NF}' ./cookie`&id=${fileid}" -o ${filename}
 }
 
 
