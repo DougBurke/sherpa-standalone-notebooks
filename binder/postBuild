@@ -101,7 +101,7 @@ ciaover -v
 # show it is possible.
 #
 pip3 freeze > ${installdir}/constraints.txt
-pip3 install -c ${installdir}/constraints.txt 'astropy<3.1' 
+pip3 install -c ${installdir}/constraints.txt 'astropy<3.1' scipy
 
 # Ensure that matplotlib is the default plotting package for Sherpa.
 #
