@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# Ensure that CIAO is available from bash. This could be done in
+# the start script, but try this approach for now.
+#
+. ${HOME}/local/ciao-4.11/bin/ciao.bash
+
+exec "$@"

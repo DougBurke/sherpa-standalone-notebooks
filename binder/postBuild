@@ -103,11 +103,6 @@ ciaover -v
 pip3 freeze > ${installdir}/constraints.txt
 pip3 install -c ${installdir}/constraints.txt 'astropy<3.1' 
 
-# Ensure that CIAO is available from bash. This could be done in
-# the start script, but try this approach for now.
-#
-echo ". ${HOME}/local/ciao-${ciaover_major}.${ciaover_minor}/bin/ciao.bash" >> ~/.bashrc
-
 # Ensure that matplotlib is the default plotting package for Sherpa.
 #
 sed -e 's/chips/pylab/g' ${ASCDS_INSTALL}/config/sherpa/.sherpa.rc > ${HOME}/.sherpa.rc
