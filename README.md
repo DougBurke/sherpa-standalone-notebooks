@@ -128,7 +128,10 @@ on previous ones. They are not guaranteed to be kept up to date!
    [XSPEC models](https://heasarc.gsfc.nasa.gov/xanadu/xspec/manual/Models.html)
    from standalone Sherpa.
 
-   June 16 2015.
+   Last updated: March 29 2019 to use with CIAO 4.11
+
+   **NOTE** there appears to be a [bug with user models](https://github.com/sherpa/sherpa/issues/609) in CIAO 4.11 / Sherpa 4.11.0
+
 
  - [Simulating 2D data with a dash of error analysis](http://nbviewer.ipython.org/github/DougBurke/sherpa-standalone-notebooks/blob/master/simulating%20a%202D%20image%20and%20a%20bit%20of%20error%20analysis.ipynb),
    which uses the object API to simulate a 2D model (i.e. an image),
@@ -140,8 +143,6 @@ on previous ones. They are not guaranteed to be kept up to date!
 
    Last updated: March 28 2019 to use the Sherpa 4.11.0 release
 
-   **NOTE** there appears to be a [bug with user models](https://github.com/sherpa/sherpa/issues/609) in CIAO 4.11 / Sherpa 4.11.0
-
  - [Simulating and fitting a 2D image (this time with a Bayesian approach)](http://nbviewer.ipython.org/github/DougBurke/sherpa-standalone-notebooks/blob/master/simulating%20and%20fitting%20a%202D%20image%20%28this%20time%20with%20a%20Bayesian%20approach%29.ipynb),
    which is based on the previous notebook, this time showing how
    you can use the Monte Carlo Markov Chain (MCMC) analysis module
@@ -151,7 +152,7 @@ on previous ones. They are not guaranteed to be kept up to date!
    rather than explain why (or the differences between the various
    frequentist and Bayesian methods for coming up with an error estimate).
 
-   Last updated: September 28 2016 to use the Sherpa 4.8.2 release
+   Last updated: March 29 2019 to use the Sherpa 4.11.0 release
 
  - [An introduction to the Session object](http://nbviewer.ipython.org/github/DougBurke/sherpa-standalone-notebooks/blob/master/an%20introduction%20to%20the%20Session%20object.ipynb),
    which is a *very* brief example of how to use the Session object
