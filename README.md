@@ -140,6 +140,8 @@ on previous ones. They are not guaranteed to be kept up to date!
 
    Last updated: March 28 2019 to use the Sherpa 4.11.0 release
 
+   **NOTE** there appears to be a [bug with user models](https://github.com/sherpa/sherpa/issues/609) in CIAO 4.11 / Sherpa 4.11.0
+
  - [Simulating and fitting a 2D image (this time with a Bayesian approach)](http://nbviewer.ipython.org/github/DougBurke/sherpa-standalone-notebooks/blob/master/simulating%20and%20fitting%20a%202D%20image%20%28this%20time%20with%20a%20Bayesian%20approach%29.ipynb),
    which is based on the previous notebook, this time showing how
    you can use the Monte Carlo Markov Chain (MCMC) analysis module
