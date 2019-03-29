@@ -1,10 +1,51 @@
 
+# Notebooks for Sherpa
+
 IPython notebooks showing off how to use either the
 [standalone version](https://sherpa.readthedocs.io/en/latest/)
 or [CIAO](http://cxc.harvard.edu/sherpa/)
-version of Sherpa to fit data.
+version of Sherpa to fit data. They were originally intended for the
+standalone version, but it's now easy to run Jupyter notebooks in CIAO
+(as of the 4.11 release) so you can use both.
 
-# New with CIAO 4.11
+---
+
+You can use the MyBinder service to run these notebooks in your
+browser, without having to install *anything*, by clicking on the
+"launch binder" button below. It can take a little time to start up!
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/DougBurke/sherpa-standalone-notebooks/master)
+
+---
+
+# What is the difference between CIAO and standalone Sherpa
+
+The main differences between using the standalone version of
+Sherpa and that provided in CIAO are:
+
+- CIAO comes with support for the [XSPEC model library](https://heasarc.nasa.gov/xanadu/xspec/manual/node308.html) whereas you have to compile both
+[XSPEC and Sherpa](https://sherpa.readthedocs.io/en/latest/install.html#xspec)
+when using the standalone release;
+- CIAO uses Crates as its I/O libraray whereas the standalone release uses
+AstroPy;
+- CIAO uses ChIPS for plotting, although it comes with Matplotlib and you can
+can change it (as we do in the MyBinder release)
+- the release schedules of the two are different, so you may see slightly-different functionality in the latest released versions.
+
+# How to run these notebooks
+
+## Using MyBinder
+
+I have used the [MyBinder service](https://mybinder.org/) to create an
+environment that contains CIAO 4.11 (well, the Sherpa parts, so you
+get XSPEC and matplotlib) which can be used to *run these notebooks
+straight from your browser*. Awesome!
+
+Note that most of the binders have not been re-run with CIAO 4.11, and
+so may fail due to using Python 2.7 idioms (or changes in behavior, but
+I don't expect there to be any of the latter).
+
+## CIAO (New with CIAO 4.11)
 
 CIAO 4.11 comes with both `jupyter notebook` support and includes Matplotlib,
 so you can just enter
@@ -21,24 +62,28 @@ should see
     > grep plot_pkg ~/.sherpa.rc
     plot_pkg : pylab
 
-# MyBinder
+## Standalone Sherpa
 
-I have used the [MyBinder service](https://mybinder.org/) to create an
-environment that contains CIAO 4.11 (well, the Sherpa parts, so you
-get XSPEC and matplotlib) which can be used to *run these notebooks
-straight from your browser*. Awesome!
+We provide conda packages for Sherpa (and it is also `pip` installable),
+so you can install Sherpa into a conda environment, along with the jupyter
+notebook (or lab) enviroment. For example:
 
-Note that most of the binders have not been re-run with CIAO 4.11, and
-so may fail due to using Python 2.7 idioms (or changes in behavior, but
-I don't expect there to be any of the latter).
+    > conda create -n=sherpa-notebooks -c sherpa python=3.7 sherpa jupyter matplotlib astropy
+    > conda activate sherpa-notebooks
+    > jupyter notebook
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/DougBurke/sherpa-standalone-notebooks/master)
+---
+
+# The notebooks
+
+These do not have to be read in the presented order, but some build
+on previous ones. They are not guaranteed to be kept up to date!
 
  - [A really simple "fit"](http://nbviewer.ipython.org/github/DougBurke/sherpa-standalone-notebooks/blob/master/really%20simple%20fit.ipynb),
    which also doubles as my go-to-guide when cooking my kids porridge
    for breakfast.
 
-   Last updated: September 26 2016 to use the Sherpa 4.8.2 release
+   Last updated: March 28 2019 to use the Sherpa 4.11.0 release
  
  - [A simple fit](http://nbviewer.ipython.org/github/DougBurke/sherpa-standalone-notebooks/blob/master/simple%20sherpa%20fit.ipynb) which is based on
    the [NumPy/SciPy fitting example](http://python4astronomers.github.io/core/numpy_scipy.html)
@@ -46,7 +91,7 @@ I don't expect there to be any of the latter).
    [Practical Python for Astronomers](http://python4astronomers.github.io/index.html)
    course.
 
-   Last updated: September 26 2016 to use the Sherpa 4.8.2 release
+   Last updated: March 28 2019 to use the Sherpa 4.11.0 release
    
  - [Writing your own user model](http://nbviewer.ipython.org/github/DougBurke/sherpa-standalone-notebooks/blob/master/user%20model.ipynb),
    which fits the cumulative distribution function of a data set
@@ -54,7 +99,7 @@ I don't expect there to be any of the latter).
    of Sherpa (I added this as we are currently lacking in documentation
    for how to use the `add_user_model` routine).
 
-   Last updated: September 26 2016 to use the Sherpa 4.8.2 release
+   Last updated: March 28 2019 to use the Sherpa 4.11.0 release
 
  - [An integrated user model](http://nbviewer.ipython.org/github/DougBurke/sherpa-standalone-notebooks/blob/master/an%20integrated%20user%20model.ipynb),
    which fits the Gamma probability distribution function to the data
@@ -64,7 +109,7 @@ I don't expect there to be any of the latter).
    manipulations (in particular, re-creating a region-projection plot
    and adding extra annotations to it).
 
-   Last updated: September 26 2016 to use the Sherpa 4.8.2 release
+   Last updated: March 28 2019 to use the Sherpa 4.11.0 release
 
  - [How can I plot data and models when using the lower-level routines](http://nbviewer.ipython.org/github/DougBurke/sherpa-standalone-notebooks/blob/master/plotting%20using%20the%20lower-level%20routines.ipynb),
    which came up (in my mind) in the "Writing your own user model"
@@ -73,7 +118,7 @@ I don't expect there to be any of the latter).
    I did not know how to create the plots. Well, I do know, and so
    can *you*.
 
-   Last updated: September 27 2016 to use the Sherpa 4.8.2 release
+   Last updated: March 28 2019 to use the Sherpa 4.11.0 release
 
  - [Extending existing models (and an example of using XSPEC models)](http://nbviewer.ipython.org/github/DougBurke/sherpa-standalone-notebooks/blob/master/extending%20existing%20models%20%28and%20XSPEC%29.ipynb),
    which shows how to write a user model that extends the behavior of
@@ -93,7 +138,7 @@ I don't expect there to be any of the latter).
    (it also marks the start of me using the term "object API" for what I
    previously referred to as the "low-level API").
 
-   Last updated: September 27 2016 to use the Sherpa 4.8.2 release
+   Last updated: March 28 2019 to use the Sherpa 4.11.0 release
 
  - [Simulating and fitting a 2D image (this time with a Bayesian approach)](http://nbviewer.ipython.org/github/DougBurke/sherpa-standalone-notebooks/blob/master/simulating%20and%20fitting%20a%202D%20image%20%28this%20time%20with%20a%20Bayesian%20approach%29.ipynb),
    which is based on the previous notebook, this time showing how
@@ -111,17 +156,14 @@ I don't expect there to be any of the latter).
    to access the UI API (e.g. that from sherpa.astro.ui or sherpa.ui)
    but with a more-Pythonic approach.
 
-   Last updated: January 31 2017 to use the Sherpa 4.9.0 release
-   (which should be available within a few days of this notebook
-   being published).
+   Last updated: March 28 2019 to use the Sherpa 4.11.0 release
  
  - [Fitting a PHA dataset using the object API](http://nbviewer.ipython.org/github/DougBurke/sherpa-standalone-notebooks/blob/master/Fitting%20a%20PHA%20dataset%20using%20the%20object%20API.ipynb),
    which provides a quick runthrough showing how to use the object
    API to fit a PHA data set (that is, how in include the instrument
    response in a fit).
 
-   Last updated: August 8 2017 using the recently-released Sherpa
-   4.9.1 release (and it is also the first Python 3.6 notebook).
+   Last updated: March 28 2019 to use the Sherpa 4.11.0 release
 
  - [Grouping spectra](https://nbviewer.jupyter.org/github/DougBurke/sherpa-standalone-notebooks/blob/master/grouping-spectra.ipynb), which looks
    at grouping PHA data to match plots produced by Sherpa. This isn't
@@ -131,6 +173,8 @@ I don't expect there to be any of the latter).
    
    Last updated: March 14 2019 to add a section on errors and
    how to calculate them and match the plot results
- 
+
+# About these notebooks
+
 The information in these notebooks is placed in the Public Domain and
 is not an official product of the Chandra X-ray Center.
