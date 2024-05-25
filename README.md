@@ -1,7 +1,7 @@
 # Notebooks for Sherpa
 
 IPython notebooks showing off how to use either the
-[standalone version](https://sherpa.readthedocs.io/en/latest/)
+[standalone version](https://sherpa.readthedocs.io/en/)
 or [CIAO](http://cxc.harvard.edu/sherpa/)
 version of Sherpa to fit data.
 
@@ -47,7 +47,7 @@ to install (we also use scipy and astropy):
 
 ## CIAO (installed using ciao-install)
 
-CIAO 4.14 comes with both `jupyter notebook` support and includes Matplotlib,
+CIAO 4.16 comes with both `jupyter notebook` support and includes Matplotlib,
 so you just need to install astropy and scipy, then you can view the
 notebooks:
 
@@ -77,13 +77,13 @@ notebook (or lab) enviroment. For example:
 These do not have to be read in the presented order, but some build
 on previous ones. They are not guaranteed to be kept up to date!
 
- - [1. A really simple "fit"](http://nbviewer.ipython.org/github/DougBurke/sherpa-standalone-notebooks/blob/master/1%20really%20simple%20fit.ipynb),
+ - [1. A really simple "fit"](http://nbviewer.ipython.org/github/DougBurke/sherpa-standalone-notebooks/blob/main/1%20really%20simple%20fit.ipynb),
    which also doubles as my go-to-guide when cooking my kids porridge
    for breakfast.
 
    Last updated: January 2 2024 to use the CIAO 4.16 release
  
- - [2. A simple fit](http://nbviewer.ipython.org/github/DougBurke/sherpa-standalone-notebooks/blob/master/2%20simple%20sherpa%20fit.ipynb) which is based on
+ - [2. A simple fit](http://nbviewer.ipython.org/github/DougBurke/sherpa-standalone-notebooks/blob/main/2%20simple%20sherpa%20fit.ipynb) which is based on
    the [NumPy/SciPy fitting example](http://python4astronomers.github.io/core/numpy_scipy.html)
    from the 
    [Practical Python for Astronomers](http://python4astronomers.github.io/index.html)
@@ -91,7 +91,7 @@ on previous ones. They are not guaranteed to be kept up to date!
 
    Last updated: Jnauary 2 2024 to use the CIAO 4.16 release
    
- - [3. Writing your own user model](http://nbviewer.ipython.org/github/DougBurke/sherpa-standalone-notebooks/blob/master/3%20user%20model.ipynb),
+ - [3. Writing your own user model](http://nbviewer.ipython.org/github/DougBurke/sherpa-standalone-notebooks/blob/main/3%20user%20model.ipynb),
    which fits the cumulative distribution function of a data set
    with the Gamma CDF. The same code can be run from the CIAO version
    of Sherpa (I added this as we are currently lacking in documentation
@@ -99,7 +99,7 @@ on previous ones. They are not guaranteed to be kept up to date!
 
    Last updated: January 2 2024 to use the CIAO 4.16 release
 
- - [4. An integrated user model](http://nbviewer.ipython.org/github/DougBurke/sherpa-standalone-notebooks/blob/master/4%20an%20integrated%20user%20model.ipynb),
+ - [4. An integrated user model](http://nbviewer.ipython.org/github/DougBurke/sherpa-standalone-notebooks/blob/main/4%20an%20integrated%20user%20model.ipynb),
    which fits the Gamma probability distribution function to the data
    set used in the 'Writing your own user model' example. This is
    an example of handling "integrated" data sets, and also shows off
@@ -109,7 +109,7 @@ on previous ones. They are not guaranteed to be kept up to date!
 
    Last updated: January 2 2024 to use the CIAO 4.16 release
 
- - [5. How can I plot data and models when using the lower-level routines](http://nbviewer.ipython.org/github/DougBurke/sherpa-standalone-notebooks/blob/master/5%20plotting%20using%20the%20lower-level%20routines.ipynb),
+ - [5. How can I plot data and models when using the lower-level routines](http://nbviewer.ipython.org/github/DougBurke/sherpa-standalone-notebooks/blob/main/5%20plotting%20using%20the%20lower-level%20routines.ipynb),
    which came up (in my mind) in the "Writing your own user model"
    example, where I started off using the lower-level API, but quickly
    switched to the higher-level (data management) API in part because
@@ -118,7 +118,7 @@ on previous ones. They are not guaranteed to be kept up to date!
 
    Last updated: January 2 2024 to use the CIAO 4.16 release
 
- - [6. Extending existing models (and an example of using XSPEC models)](http://nbviewer.ipython.org/github/DougBurke/sherpa-standalone-notebooks/blob/master/6%20extending%20existing%20models%20%28and%20XSPEC%29.ipynb),
+ - [6. Extending existing models (and an example of using XSPEC models)](http://nbviewer.ipython.org/github/DougBurke/sherpa-standalone-notebooks/blob/main/6%20extending%20existing%20models%20%28and%20XSPEC%29.ipynb),
    which shows how to write a user model that extends the behavior of
    an existing model (in this case, subtracting a model from itself with
    different parameter values). It also shows how to build the XSPEC module,
@@ -128,7 +128,7 @@ on previous ones. They are not guaranteed to be kept up to date!
 
    Last updated: January 2 2024 to use the CIAO 4.16 release
 
- - [7. Simulating 2D data with a dash of error analysis](http://nbviewer.ipython.org/github/DougBurke/sherpa-standalone-notebooks/blob/master/7%20simulating%20a%202D%20image%20and%20a%20bit%20of%20error%20analysis.ipynb),
+ - [7. Simulating 2D data with a dash of error analysis](http://nbviewer.ipython.org/github/DougBurke/sherpa-standalone-notebooks/blob/main/7%20simulating%20a%202D%20image%20and%20a%20bit%20of%20error%20analysis.ipynb),
    which uses the object API to simulate a 2D model (i.e. an image),
    fit it, and calculate errors on the parameters. This can be thought of
    as an extension of the previous notebooks that show how to replicate
@@ -141,7 +141,7 @@ on previous ones. They are not guaranteed to be kept up to date!
 
    Last updated: January 2 2024 to use the CIAO 4.16 release
 
- - [8. Simulating and fitting a 2D image (this time with a Bayesian approach)](http://nbviewer.ipython.org/github/DougBurke/sherpa-standalone-notebooks/blob/master/8%20simulating%20and%20fitting%20a%202D%20image%20%28this%20time%20with%20a%20Bayesian%20approach%29.ipynb),
+ - [8. Simulating and fitting a 2D image (this time with a Bayesian approach)](http://nbviewer.ipython.org/github/DougBurke/sherpa-standalone-notebooks/blob/main/8%20simulating%20and%20fitting%20a%202D%20image%20%28this%20time%20with%20a%20Bayesian%20approach%29.ipynb),
    which is based on the previous notebook, this time showing how
    you can use the Monte Carlo Markov Chain (MCMC) analysis module
    in Sherpa (that is, the
@@ -155,31 +155,40 @@ on previous ones. They are not guaranteed to be kept up to date!
 
    Last updated: January 2 2024 to use the CIAO 4.16 release
 
- - [9. An introduction to the Session object](http://nbviewer.ipython.org/github/DougBurke/sherpa-standalone-notebooks/blob/master/9%20an%20introduction%20to%20the%20Session%20object.ipynb),
+ - [9. An introduction to the Session object](http://nbviewer.ipython.org/github/DougBurke/sherpa-standalone-notebooks/blob/main/9%20an%20introduction%20to%20the%20Session%20object.ipynb),
    which is a *very* brief example of how to use the Session object
    to access the UI API (e.g. that from sherpa.astro.ui or sherpa.ui)
    but with a more-Pythonic approach.
 
    Last updated: January 2 2024 to use the CIAO 4.16 release
  
- - [10. Fitting a PHA dataset using the object API](http://nbviewer.ipython.org/github/DougBurke/sherpa-standalone-notebooks/blob/master/10%20Fitting%20a%20PHA%20dataset%20using%20the%20object%20API.ipynb),
+ - [10. Fitting a PHA dataset using the object API](http://nbviewer.ipython.org/github/DougBurke/sherpa-standalone-notebooks/blob/main/10%20Fitting%20a%20PHA%20dataset%20using%20the%20object%20API.ipynb),
    which provides a quick runthrough showing how to use the object
    API to fit a PHA data set (that is, how in include the instrument
    response in a fit).
 
    Last updated: January 2 2024 to use the CIAO 4.16 release
 
- - [11. Grouping spectra](https://nbviewer.jupyter.org/github/DougBurke/sherpa-standalone-notebooks/blob/master/11%20grouping-spectra.ipynb), which looks
+ - [11. Grouping spectra](https://nbviewer.jupyter.org/github/DougBurke/sherpa-standalone-notebooks/blob/main/11%20grouping-spectra.ipynb), which looks
    at grouping PHA data to match plots produced by Sherpa. This isn't
    quite finished, but it was hopefully useful to the [REXIS team](https://hea-www.harvard.edu/REXIS/class.html).
 
    Last updated: January 2024 to use the CIAO 4.16 release
 
- - [Exploring a bias in WSTAT](https://nbviewer.jupyter.org/github/DougBurke/sherpa-standalone-notebooks/blob/master/Exploring%20a%20bias%20in%20WSTAT.ipynb),
+ - [Exploring a bias in WSTAT](https://nbviewer.jupyter.org/github/DougBurke/sherpa-standalone-notebooks/blob/main/Exploring%20a%20bias%20in%20WSTAT.ipynb),
    which recreates, in our favourite fitting package, the analysis of WSTAT biases by [Giacomo Vianello](https://giacomov.github.io/)
    on the page [Bias In Profile Poisson Likelihood](https://giacomov.github.io/Bias-in-profile-poisson-likelihood/).
 
+ - [Sherpa and the Terrible, Horrible, No Good, Very Bad Optimizer](https://nbviewer.jupyter.org/github/DougBurke/sherpa-standalone-notebooks/blob/main/Optimization%20Example.ipynb),
+   which attempts to provide an example of how to add an optimizer to Sherpa,
+   but because I am not much of an optimization guru, the example is
+   defnitely **not fit for human consumption**.
+
+   New release: May 2024
+ 
 # About these notebooks
 
 The information in these notebooks is placed in the Public Domain and
-is not an official product of the Chandra X-ray Center.
+is not an official product of the Chandra X-ray Center. However, I do
+use these as jump-off points for adding to, or improving, the [Sherpa
+documentation](https://sherpa.readthedocs.io/en/latest/).
