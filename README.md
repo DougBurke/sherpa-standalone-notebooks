@@ -189,7 +189,12 @@ on previous ones. They are not guaranteed to be kept up to date!
    defnitely **not fit for human consumption**.
 
    New release: May 2024
- 
+
+ - [Can I gain your attention](https://nbviewer.jupyter.org/github/DougBurke/sherpa-standalone-notebooks/blob/main/Can%20I%20gain%20your%20attention.ipynb),
+   which is an attempt to recreate the functionality of the XSpec [gain command](https://heasarc.gsfc.nasa.gov/xanadu/xspec/manual/XSgain.html).
+
+   New release: July 2024
+
 # About these notebooks
 
 The information in these notebooks is placed in the Public Domain and
