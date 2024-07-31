@@ -194,7 +194,11 @@ on previous ones. They are not guaranteed to be kept up to date!
    which is an attempt to recreate the functionality of the XSpec [gain command](https://heasarc.gsfc.nasa.gov/xanadu/xspec/manual/XSgain.html).
 
    New release: July 2024
-
+   
+   Update: July 31 2024
+     - point out that unfortunately this approach does not match XSpec and
+       I do not yet understand why.
+     
 # About these notebooks
 
 The information in these notebooks is placed in the Public Domain and
