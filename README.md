@@ -81,7 +81,7 @@ on previous ones. They are not guaranteed to be kept up to date!
    which also doubles as my go-to-guide when cooking my kids porridge
    for breakfast.
 
-   Last updated: May 29 2024 to use Sherpa 4.16.1
+   Last updated: October 7 2025 to use Sherpa 4.18.0
  
  - [2. A simple fit](http://nbviewer.ipython.org/github/DougBurke/sherpa-standalone-notebooks/blob/main/2%20simple%20sherpa%20fit.ipynb) which is based on
    the [NumPy/SciPy fitting example](http://python4astronomers.github.io/core/numpy_scipy.html)
@@ -89,7 +89,7 @@ on previous ones. They are not guaranteed to be kept up to date!
    [Practical Python for Astronomers](http://python4astronomers.github.io/index.html)
    course.
 
-   Last updated: May 29 2024 to use Sherpa 4.16.1
+   Last updated: October 7 2025 to use Sherpa 4.18.0
    
  - [3. Writing your own user model](http://nbviewer.ipython.org/github/DougBurke/sherpa-standalone-notebooks/blob/main/3%20user%20model.ipynb),
    which fits the cumulative distribution function of a data set
@@ -97,7 +97,7 @@ on previous ones. They are not guaranteed to be kept up to date!
    of Sherpa (I added this as we are currently lacking in documentation
    for how to use the `add_user_model` routine).
 
-   Last updated: May 29 2024 to use Sherpa 4.16.1
+   Last updated: October 7 2025 to use Sherpa 4.18.0
 
  - [4. An integrated user model](http://nbviewer.ipython.org/github/DougBurke/sherpa-standalone-notebooks/blob/main/4%20an%20integrated%20user%20model.ipynb),
    which fits the Gamma probability distribution function to the data
@@ -107,7 +107,7 @@ on previous ones. They are not guaranteed to be kept up to date!
    manipulations (in particular, re-creating a region-projection plot
    and adding extra annotations to it).
 
-   Last updated: May 29 2024 to use Sherpa 4.16.1
+   Last updated: October 7 2025 to use Sherpa 4.18.0
 
  - [5. How can I plot data and models when using the lower-level routines](http://nbviewer.ipython.org/github/DougBurke/sherpa-standalone-notebooks/blob/main/5%20plotting%20using%20the%20lower-level%20routines.ipynb),
    which came up (in my mind) in the "Writing your own user model"
@@ -116,7 +116,7 @@ on previous ones. They are not guaranteed to be kept up to date!
    I did not know how to create the plots. Well, I do know, and so
    can *you*.
 
-   Last updated: May 29 2024 to use Sherpa 4.16.1
+   Last updated: October 7 2025 to use Sherpa 4.18.0
 
  - [6. Extending existing models (and an example of using XSPEC models)](http://nbviewer.ipython.org/github/DougBurke/sherpa-standalone-notebooks/blob/main/6%20extending%20existing%20models%20%28and%20XSPEC%29.ipynb),
    which shows how to write a user model that extends the behavior of
@@ -126,7 +126,7 @@ on previous ones. They are not guaranteed to be kept up to date!
    [XSPEC models](https://heasarc.gsfc.nasa.gov/xanadu/xspec/manual/Models.html)
    from standalone Sherpa.
 
-   Last updated: January 2 2024 to use the CIAO 4.16 release
+   Last updated: October 7 2025 to use Sherpa 4.18.0
 
  - [7. Simulating 2D data with a dash of error analysis](http://nbviewer.ipython.org/github/DougBurke/sherpa-standalone-notebooks/blob/main/7%20simulating%20a%202D%20image%20and%20a%20bit%20of%20error%20analysis.ipynb),
    which uses the object API to simulate a 2D model (i.e. an image),
@@ -139,7 +139,7 @@ on previous ones. They are not guaranteed to be kept up to date!
    This is **very** slow on the myBinder environment as it needs a
    relatively-fast machine.
 
-   Last updated: May 29 2024 to use Sherpa 4.16.1
+   Last updated: October 7 2025 to use Sherpa 4.18.0
 
  - [8. Simulating and fitting a 2D image (this time with a Bayesian approach)](http://nbviewer.ipython.org/github/DougBurke/sherpa-standalone-notebooks/blob/main/8%20simulating%20and%20fitting%20a%202D%20image%20%28this%20time%20with%20a%20Bayesian%20approach%29.ipynb),
    which is based on the previous notebook, this time showing how
@@ -153,27 +153,27 @@ on previous ones. They are not guaranteed to be kept up to date!
    This is **very** **very** slow on the myBinder environment as it needs a
    fast machine.
 
-   Last updated: May 29 2024 to use Sherpa 4.16.1
+   Last updated: October 7 2025 to use Sherpa 4.18.0
 
  - [9. An introduction to the Session object](http://nbviewer.ipython.org/github/DougBurke/sherpa-standalone-notebooks/blob/main/9%20an%20introduction%20to%20the%20Session%20object.ipynb),
    which is a *very* brief example of how to use the Session object
    to access the UI API (e.g. that from sherpa.astro.ui or sherpa.ui)
    but with a more-Pythonic approach.
 
-   Last updated: May 29 2024 to use Sherpa 4.16.1
+   Last updated: October 7 2025 to use Sherpa 4.18.0
  
  - [10. Fitting a PHA dataset using the object API](http://nbviewer.ipython.org/github/DougBurke/sherpa-standalone-notebooks/blob/main/10%20Fitting%20a%20PHA%20dataset%20using%20the%20object%20API.ipynb),
    which provides a quick runthrough showing how to use the object
    API to fit a PHA data set (that is, how in include the instrument
    response in a fit).
 
-   Last updated: May 29 2024 to use Sherpa 4.16.1
+   Last updated: October 7 2025 to use Sherpa 4.18.0
 
  - [11. Grouping spectra](https://nbviewer.jupyter.org/github/DougBurke/sherpa-standalone-notebooks/blob/main/11%20grouping-spectra.ipynb), which looks
    at grouping PHA data to match plots produced by Sherpa. This isn't
    quite finished, but it was hopefully useful to the [REXIS team](https://hea-www.harvard.edu/REXIS/class.html).
 
-   Last updated: January 2024 to use the CIAO 4.16 release
+   Last updated: October 7 2025 to use Sherpa 4.18.0
 
  - [Exploring a bias in WSTAT](https://nbviewer.jupyter.org/github/DougBurke/sherpa-standalone-notebooks/blob/main/Exploring%20a%20bias%20in%20WSTAT.ipynb),
    which recreates, in our favourite fitting package, the analysis of WSTAT biases by [Giacomo Vianello](https://giacomov.github.io/)
@@ -188,7 +188,7 @@ on previous ones. They are not guaranteed to be kept up to date!
    but because I am not much of an optimization guru, the example is
    defnitely **not fit for human consumption**.
 
-   New release: May 2024
+   Last updated: October 7 2025 to use Sherpa 4.18.0
 
  - [Can I gain your attention](https://nbviewer.jupyter.org/github/DougBurke/sherpa-standalone-notebooks/blob/main/Can%20I%20gain%20your%20attention.ipynb),
    which is an attempt to recreate the functionality of the XSpec [gain command](https://heasarc.gsfc.nasa.gov/xanadu/xspec/manual/XSgain.html).
@@ -198,7 +198,9 @@ on previous ones. They are not guaranteed to be kept up to date!
    Update: July 31 2024
      - point out that unfortunately this approach does not match XSpec and
        I do not yet understand why.
-     
+
+   Updated: October 7 2025 to use Sherpa 4.18.0
+
 # About these notebooks
 
 The information in these notebooks is placed in the Public Domain and
