@@ -201,6 +201,11 @@ on previous ones. They are not guaranteed to be kept up to date!
 
    Updated: October 7 2025 to use Sherpa 4.18.0
 
+ - [Exploring Kaastra 2017](https://nbviewer.jupyter.org/github/DougBurke/sherpa-standalone-notebooks/blob/main/Kaastra17.ipynb), which is a look at the
+   [Kaastra 2017](https://ui.adsabs.harvard.edu/abs/2017A%26A...605A..51K/abstract) approximation for `CStat`.
+
+   New Release: fall 2025
+
 # About these notebooks
 
 The information in these notebooks is placed in the Public Domain and
