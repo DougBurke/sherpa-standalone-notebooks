@@ -204,7 +204,7 @@ on previous ones. They are not guaranteed to be kept up to date!
  - [Exploring Kaastra 2017](https://nbviewer.jupyter.org/github/DougBurke/sherpa-standalone-notebooks/blob/main/Kaastra17.ipynb), which is a look at the
    [Kaastra 2017](https://ui.adsabs.harvard.edu/abs/2017A%26A...605A..51K/abstract) approximation for `CStat`.
 
-   New Release: fall 2025
+   New Release: October 24 2025
 
 # About these notebooks
 
